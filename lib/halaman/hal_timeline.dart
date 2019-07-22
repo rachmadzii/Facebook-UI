@@ -17,15 +17,31 @@ class Timeline extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       avatar("images/profile.jpg"),
-                      Text(
-                        "What's on your mind?",
-                        style: TextStyle(fontSize: 16.0),
-                      ),
+                      Container(
+                          height: 40.0,
+                          width: 200.0,
+                          decoration: BoxDecoration(
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(30.0)),
+                              color: Colors.white,
+                              border: Border.all(
+                                  color: Colors.grey[400], width: 1.0)),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              SizedBox(height: 10.0),
+                              Text("What's on your mind?",
+                                  style: TextStyle(fontSize: 15.0)),
+                            ],
+                          )),
                       Column(
                         children: <Widget>[
                           Icon(Icons.photo_library),
-                          SizedBox(width: 5.0),
-                          Text("Photos")
+                          SizedBox(height: 5.0),
+                          Text(
+                            "Photos",
+                            style: TextStyle(fontSize: 12.0),
+                          ),
                         ],
                       )
                     ],
@@ -39,16 +55,257 @@ class Timeline extends StatelessWidget {
                       margin: EdgeInsets.all(10.0),
                       child: Row(
                         children: <Widget>[
-                          Row(
-                            children: <Widget>[
-                              story("images/profile.jpg"),
-                            ],
+                          Container(
+                            child: Stack(
+                              children: <Widget>[
+                                Row(
+                                  children: <Widget>[
+                                    Container(
+                                      child: Stack(
+                                        children: <Widget>[
+                                          Row(
+                                            children: <Widget>[
+                                              story("images/profile.jpg"),
+                                            ],
+                                          ),
+                                          Positioned(
+                                            top: 12.0,
+                                            left: 12.0,
+                                            child: Container(
+                                              width: 40.0,
+                                              height: 40.0,
+                                              decoration: BoxDecoration(
+                                                borderRadius: BorderRadius.all(
+                                                    Radius.circular(46.0)),
+                                                color: Colors.white,
+                                              ),
+                                              child: Icon(Icons.add,
+                                                  size: 25.0,
+                                                  color: Colors.blue),
+                                            ),
+                                          ),
+                                          Positioned(
+                                            bottom: 10.0,
+                                            left: 10.0,
+                                            child: Text(
+                                              "Add to story",
+                                              style: TextStyle(
+                                                  color: Colors.white),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    Container(
+                                      child: Stack(
+                                        children: <Widget>[
+                                          Row(
+                                            children: <Widget>[
+                                              Container(
+                                                child: Stack(
+                                                  children: <Widget>[
+                                                    Row(
+                                                      children: <Widget>[
+                                                        story(
+                                                            "images/story_3.jpg"),
+                                                      ],
+                                                    ),
+                                                    Positioned(
+                                                      top: 12.0,
+                                                      left: 12.0,
+                                                      child: Container(
+                                                        width: 40.0,
+                                                        height: 40.0,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          borderRadius:
+                                                              BorderRadius.all(
+                                                                  Radius
+                                                                      .circular(
+                                                                          46.0)),
+                                                          color: Colors.white,
+                                                        ),
+                                                        child: avatarStory(
+                                                            "images/friend10.jpg"),
+                                                      ),
+                                                    ),
+                                                    Positioned(
+                                                      bottom: 10.0,
+                                                      left: 10.0,
+                                                      child: Text(
+                                                        "Rizna Farasya",
+                                                        style: TextStyle(
+                                                            color:
+                                                                Colors.white),
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ),
+                                              Container(
+                                                child: Stack(
+                                                  children: <Widget>[
+                                                    Row(
+                                                      children: <Widget>[
+                                                        Container(
+                                                          child: Stack(
+                                                            children: <Widget>[
+                                                              Row(
+                                                                children: <
+                                                                    Widget>[
+                                                                  story(
+                                                                      "images/story_4.jpg"),
+                                                                ],
+                                                              ),
+                                                              Positioned(
+                                                                top: 12.0,
+                                                                left: 12.0,
+                                                                child:
+                                                                    Container(
+                                                                  width: 40.0,
+                                                                  height: 40.0,
+                                                                  decoration:
+                                                                      BoxDecoration(
+                                                                    borderRadius:
+                                                                        BorderRadius.all(
+                                                                            Radius.circular(46.0)),
+                                                                    color: Colors
+                                                                        .white,
+                                                                  ),
+                                                                  child: avatarStory(
+                                                                      "images/friend11.jpg"),
+                                                                ),
+                                                              ),
+                                                              Positioned(
+                                                                bottom: 10.0,
+                                                                left: 10.0,
+                                                                child: Text(
+                                                                  "Riano Arrayan",
+                                                                  style: TextStyle(
+                                                                      color: Colors
+                                                                          .white),
+                                                                ),
+                                                              ),
+                                                            ],
+                                                          ),
+                                                        ),
+                                                        Container(
+                                                          child: Stack(
+                                                            children: <Widget>[
+                                                              Row(
+                                                                children: <
+                                                                    Widget>[
+                                                                  Container(
+                                                                    child:
+                                                                        Stack(
+                                                                      children: <
+                                                                          Widget>[
+                                                                        Row(
+                                                                          children: <
+                                                                              Widget>[
+                                                                            story("images/story_5.jpg"),
+                                                                          ],
+                                                                        ),
+                                                                        Positioned(
+                                                                          top:
+                                                                              12.0,
+                                                                          left:
+                                                                              12.0,
+                                                                          child:
+                                                                              Container(
+                                                                            width:
+                                                                                40.0,
+                                                                            height:
+                                                                                40.0,
+                                                                            decoration:
+                                                                                BoxDecoration(
+                                                                              borderRadius: BorderRadius.all(Radius.circular(46.0)),
+                                                                              color: Colors.white,
+                                                                            ),
+                                                                            child:
+                                                                                avatarStory("images/friend15.jpg"),
+                                                                          ),
+                                                                        ),
+                                                                        Positioned(
+                                                                          bottom:
+                                                                              10.0,
+                                                                          left:
+                                                                              10.0,
+                                                                          child:
+                                                                              Text(
+                                                                            "Aira Chikayra",
+                                                                            style:
+                                                                                TextStyle(color: Colors.white),
+                                                                          ),
+                                                                        ),
+                                                                      ],
+                                                                    ),
+                                                                  ),
+                                                                  Container(
+                                                                    child:
+                                                                        Stack(
+                                                                      children: <
+                                                                          Widget>[
+                                                                        Row(
+                                                                          children: <
+                                                                              Widget>[
+                                                                            Container(
+                                                                              child: Stack(
+                                                                                children: <Widget>[
+                                                                                  Row(
+                                                                                    children: <Widget>[
+                                                                                      story("images/story_6.jpg"),
+                                                                                    ],
+                                                                                  ),
+                                                                                  Positioned(
+                                                                                    top: 12.0,
+                                                                                    left: 12.0,
+                                                                                    child: Container(
+                                                                                      width: 40.0,
+                                                                                      height: 40.0,
+                                                                                      decoration: BoxDecoration(
+                                                                                        borderRadius: BorderRadius.all(Radius.circular(46.0)),
+                                                                                        color: Colors.white,
+                                                                                      ),
+                                                                                      child: avatarStory("images/friend12.jpg"),
+                                                                                    ),
+                                                                                  ),
+                                                                                  Positioned(
+                                                                                    bottom: 10.0,
+                                                                                    left: 10.0,
+                                                                                    child: Text(
+                                                                                      "Syakilla Nabila",
+                                                                                      style: TextStyle(color: Colors.white),
+                                                                                    ),
+                                                                                  ),
+                                                                                ],
+                                                                              ),
+                                                                            ),
+                                                                          ],
+                                                                        ),
+                                                                      ],
+                                                                    ),
+                                                                  ),
+                                                                ],
+                                                              ),
+                                                            ],
+                                                          ),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                  ],
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
                           ),
-                          story("images/story_1.jpg"),
-                          story("images/story_3.jpg"),
-                          story("images/story_4.jpg"),
-                          story("images/story_5.jpg"),
-                          story("images/story_6.jpg"),
                         ],
                       ),
                     ),
@@ -69,10 +326,17 @@ class Timeline extends StatelessWidget {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          Text(
-                            "Azura Aikayra",
-                            style: TextStyle(
-                                fontSize: 16.0, fontWeight: FontWeight.bold),
+                          Row(
+                            children: <Widget>[
+                              Text(
+                                "Azura Aikayra",
+                                style: TextStyle(
+                                    fontSize: 16.0,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              SizedBox(width: 140.0),
+                              Icon(Icons.more_horiz),
+                            ],
                           ),
                           SizedBox(height: 5.0),
                           Row(
@@ -159,10 +423,17 @@ class Timeline extends StatelessWidget {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          Text(
-                            "Airu",
-                            style: TextStyle(
-                                fontSize: 16.0, fontWeight: FontWeight.bold),
+                          Row(
+                            children: <Widget>[
+                              Text(
+                                "Alady Navaro",
+                                style: TextStyle(
+                                    fontSize: 16.0,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              SizedBox(width: 145.0),
+                              Icon(Icons.more_horiz),
+                            ],
                           ),
                           SizedBox(height: 5.0),
                           Row(
@@ -173,7 +444,7 @@ class Timeline extends StatelessWidget {
                             ],
                           ),
                         ],
-                      )
+                      ),
                     ],
                   ),
                   Padding(
@@ -238,10 +509,17 @@ class Timeline extends StatelessWidget {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          Text(
-                            "Farsya Flania",
-                            style: TextStyle(
-                                fontSize: 16.0, fontWeight: FontWeight.bold),
+                          Row(
+                            children: <Widget>[
+                              Text(
+                                "Farsya Flaniya",
+                                style: TextStyle(
+                                    fontSize: 16.0,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              SizedBox(width: 140.0),
+                              Icon(Icons.more_horiz),
+                            ],
                           ),
                           SizedBox(height: 5.0),
                           Row(
@@ -403,6 +681,16 @@ class Timeline extends StatelessWidget {
         ),
         onPressed: () {},
       ),
+    );
+  }
+
+  avatarStory(image) {
+    return Container(
+      decoration: BoxDecoration(
+          shape: BoxShape.rectangle,
+          borderRadius: BorderRadius.all(Radius.circular(30.0)),
+          image: DecorationImage(image: AssetImage(image), fit: BoxFit.cover),
+          border: Border.all(color: Colors.blue[500], width: 3.0)),
     );
   }
 }
