@@ -68,7 +68,6 @@ flutter:
     - images/kucing2.jpg
     - images/post4.jpg
     - images/grup.png
-    - images/preset.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
