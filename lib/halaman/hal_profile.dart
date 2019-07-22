@@ -19,7 +19,36 @@ class Profile extends StatelessWidget {
                       Row(
                         children: <Widget>[header("images/header.jpg")],
                       ),
-                      profile("images/profile.jpg")
+                      profile("images/profile.jpg"),
+                      Positioned(
+                        top: 245.0,
+                        right: 100.0,
+                        child: Container(
+                          width: 43.0,
+                          height: 43.0,
+                          decoration: BoxDecoration(
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(46.0)),
+                            color: Colors.blueGrey[50],
+                            border: Border.all(color: Colors.white, width: 2.0),
+                          ),
+                          child: Icon(Icons.camera_alt, size: 20.0),
+                        ),
+                      ),
+                      Positioned(
+                        top: 170.0,
+                        right: 25.0,
+                        child: Container(
+                          width: 35.0,
+                          height: 30.0,
+                          decoration: BoxDecoration(
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(5.0)),
+                            color: Colors.blueGrey[50],
+                          ),
+                          child: Icon(Icons.camera_alt, size: 18.0),
+                        ),
+                      )
                     ],
                   ),
                 ),
@@ -178,7 +207,7 @@ class Profile extends StatelessWidget {
                             width: 4.0,
                           ),
                           Text(
-                            'Seoul',
+                            'Jakarta',
                             style: TextStyle(
                                 fontSize: 16.0, fontWeight: FontWeight.bold),
                           ),
@@ -187,19 +216,19 @@ class Profile extends StatelessWidget {
                       SizedBox(height: 10.0),
                       Row(
                         children: <Widget>[
-                          Icon(Icons.cake, color: Colors.grey[600]),
+                          Icon(Icons.pin_drop, color: Colors.grey[600]),
                           SizedBox(
                             width: 6.0,
                           ),
                           Text(
-                            'Born on',
+                            'From',
                             style: TextStyle(fontSize: 16.0),
                           ),
                           SizedBox(
                             width: 4.0,
                           ),
                           Text(
-                            'May 30',
+                            'Bandung, Indonesia',
                             style: TextStyle(
                                 fontSize: 16.0, fontWeight: FontWeight.bold),
                           ),
@@ -293,7 +322,7 @@ class Profile extends StatelessWidget {
                                     friendReview("images/friend10.jpg"),
                                     SizedBox(height: 3.0),
                                     Text(
-                                      "Aina Faturiza",
+                                      "Rizna Farasya",
                                       style: TextStyle(fontSize: 15.0),
                                     )
                                   ],
@@ -304,7 +333,7 @@ class Profile extends StatelessWidget {
                                     friendReview("images/friend11.jpg"),
                                     SizedBox(height: 3.0),
                                     Text(
-                                      "Aina Faturiza",
+                                      "Riano Arrayan",
                                       style: TextStyle(fontSize: 15.0),
                                     )
                                   ],
@@ -315,7 +344,7 @@ class Profile extends StatelessWidget {
                                     friendReview("images/friend12.jpg"),
                                     SizedBox(height: 3.0),
                                     Text(
-                                      "Aina Faturiza",
+                                      "Syakilla Nabila",
                                       style: TextStyle(fontSize: 15.0),
                                     )
                                   ],
@@ -332,7 +361,7 @@ class Profile extends StatelessWidget {
                                     friendReview("images/friend13.jpg"),
                                     SizedBox(height: 3.0),
                                     Text(
-                                      "Aina Faturiza",
+                                      "Alady Navaro",
                                       style: TextStyle(fontSize: 15.0),
                                     )
                                   ],
@@ -343,7 +372,7 @@ class Profile extends StatelessWidget {
                                     friendReview("images/friend14.jpg"),
                                     SizedBox(height: 3.0),
                                     Text(
-                                      "Aina Faturiza",
+                                      "Aina Faturizza",
                                       style: TextStyle(fontSize: 15.0),
                                     )
                                   ],
@@ -354,7 +383,7 @@ class Profile extends StatelessWidget {
                                     friendReview("images/friend16.jpg"),
                                     SizedBox(height: 3.0),
                                     Text(
-                                      "Aina Faturiza",
+                                      "Farsya Flaniya",
                                       style: TextStyle(fontSize: 15.0),
                                     )
                                   ],
@@ -581,8 +610,9 @@ class Profile extends StatelessWidget {
         width: 190.0,
         decoration: BoxDecoration(
             shape: BoxShape.circle,
-            image: DecorationImage(fit: BoxFit.cover, image: AssetImage(image)),
-            border: Border.all(color: Colors.white, width: 4.0)),
+            image:
+                DecorationImage(fit: BoxFit.contain, image: AssetImage(image)),
+            border: Border.all(color: Colors.white, width: 5.0)),
       ),
     );
   }
