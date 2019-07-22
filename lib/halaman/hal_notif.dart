@@ -25,7 +25,7 @@ class Notif extends StatelessWidget {
                 color: Colors.grey,
               ),
               Container(
-                padding: EdgeInsets.only(bottom: 15.0, right: 10.0),
+                padding: EdgeInsets.only(left: 10.0, bottom: 15.0, right: 10.0),
                 child: Stack(
                   alignment: Alignment.bottomRight,
                   overflow: Overflow.visible,
@@ -33,7 +33,6 @@ class Notif extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
-                        SizedBox(width: 5.0),
                         avaNotif("images/friend15.jpg"),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
