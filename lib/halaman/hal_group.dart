@@ -244,7 +244,7 @@ class Group extends StatelessWidget {
                 children: <Widget>[
                   Row(
                     children: <Widget>[
-                      avatar("images/friend12.jpg"),
+                      avatar("images/friend14.jpg"),
                       SizedBox(width: 13.0),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -252,7 +252,7 @@ class Group extends StatelessWidget {
                           Row(
                             children: <Widget>[
                               Text(
-                                "Syakilla Nabila",
+                                "Aina Faturizza",
                                 style: TextStyle(
                                     fontSize: 16.0,
                                     fontWeight: FontWeight.bold),
@@ -281,15 +281,13 @@ class Group extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.only(top: 15.0),
                   ),
-                  Text("Preset/tutorial, yay/nay?"),
+                  Text("Drop preset yang kalian punya, ya? XD",
+                      style: TextStyle(fontSize: 16.0)),
                 ],
               ),
             ),
             Container(
-              child: Image.asset("images/preset.png"),
-            ),
-            Container(
-                padding: EdgeInsets.only(left: 15.0, top: 15.0, right: 15.0),
+                padding: EdgeInsets.only(left: 15.0, top: 10.0, right: 15.0),
                 child: Column(
                   children: <Widget>[
                     Row(
